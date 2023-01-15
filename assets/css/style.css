@@ -96,6 +96,13 @@ header {
 
 .imagem--beneficios{
 	width: 60%;
+	opacity: 1;
+	box-shadow: 10px 10px 10px #000000;
+}
+
+.imagem--beneficios:hover{
+	opacity: 0.3;
+	transition: 400ms;
 }
 
 .video{
@@ -150,6 +157,7 @@ nav a:hover {
 	box-sizing: border-box;
 	border: 2px solid black;
 	border-radius: 10px;
+	box-shadow: 0 0 15px #888888;
 }
 
 .produtos li:hover {
@@ -253,3 +261,26 @@ table tr td{
 	border: 2px solid #FFFFFF;
 }
 
+
+
+
+@media screen and (max-width: 480px) {
+	.caixa, .principal, .conteudo--beneficios, .mapa--conteudo, .video{
+		width: auto;
+	}
+
+	h1{
+		text-align: center;
+	}
+
+	nav{
+		position: static;
+		margin: 5px auto;
+	}
+
+	.lista--beneficios, .imagem--beneficios{
+		width: 100%;
+		margin: 10px 0;
+	}
+
+}
